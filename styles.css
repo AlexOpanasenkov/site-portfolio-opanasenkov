@@ -40,27 +40,35 @@ body {
 /* ---------------------------------------------------------------------------- */
 .wrapper {
   min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper__content {
+  flex: 1;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  margin-top: 2.96875rem;
 }
 
 ._container {
   min-width: 80%;
 }
 .header {
-  justify-content: space-between;
-  display: flex;
-  /* min-height: 30%;
-  margin-bottom: 130px; */
   position: fixed;
-  right: 0;
   left: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #F3F7FA;
+  right: 0;
+  top: 0;
+  padding: 0.78125rem 0;
   z-index: 100;
+  background-color: #F3F7FA;
   border: 1px dashed red;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo,
@@ -87,7 +95,7 @@ body {
 
 .logo__circle_color_dark-blue {
   left: 5px;
-  top: 49%;
+  top: 43%;
   background: #0056ec;
   border-radius: 50%;
   opacity: 0.7;
@@ -95,7 +103,7 @@ body {
 
 .logo__circle_color_blue {
   left: 13px;
-  top: 55%;
+  top: 48%;
   background: #c8dbfb;
   border-radius: 50%;
   opacity: 0.7;
@@ -168,13 +176,14 @@ body {
 .main__container_left {
   background-color: #6E07F3;
   color: white;
+  /* margin-right: 120px; */
 }
 
 .main {
   /* padding: 75px 63% 283px 3px; */
   display: flex;
-  justify-content: space-between;
-  position: absolute;
+  justify-content: space-around;
+  /* position: absolute; */
     /* top: 147px; */
   margin-top: 190px;
   border: dashed 1px red;
@@ -201,19 +210,26 @@ body {
 }
 
 .main__container {
+  display: flex;
+  justify-items: center;
   width: 100%; /* Ширина контейнера, например, 100% экрана */
-  max-width: 100%; /* Максимальная ширина контейнера */
   height: auto; /* Автоматическая высота контейнера */
   overflow: hidden; /* Скрыть изображение, если оно выходит за пределы контейнера */
   border: dashed 1px red;
 }
 
+.image-wrapper {
+  max-width: 100%; /* Подгоняет размер изображения по ширине контейнера */
+}
+
 .main__container_img {
-  width: 100%; /* Масштабировать изображение на 100% ширины контейнера */
-  height: auto; /* Автоматическая высота изображения */
+  /* width: 100%; Масштабировать изображение на 100% ширины контейнера */
+  width: 35%;
+  /* height: auto; Автоматическая высота изображения */
   display: block; /* Сделать изображение блочным элементом */
   border: dashed 1px red;
-  border-radius: 20%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 
