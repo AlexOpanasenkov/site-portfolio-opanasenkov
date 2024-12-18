@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>site-portfolio-opanasenkov</title>
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/instagram-favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/instagram-favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/favicon/instagram-favicon.png"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -14,7 +17,6 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo__text">Oleksandr Opanasenkov</a>
                 <a href="#" class="logo">
                     <div class="logo">
                         <div class="logo__circle logo__circle_color_dark-blue">
@@ -23,22 +25,87 @@
                         </div>
                     </div>
                 </a>
+                <div>
+                    <a href="#" class="logo__text">Oleksandr Opanasenkov</a></div>
+                <div>
+                </div>
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Обо мне</a>
+                        <a href="#about" class="menu-link">About me</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Работы</a>
+                        <a href="myWorks" class="menu-link">Works</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link">Написать мне</a>
+                        <a href="#" class="menu-link">Write to me</a>
                     </li>
                     <li class="menu-item">
                         <a href="tel:421951308377" class="menu-link">+421 951-308-377</a>
                     </li>
+                    <li class="menu-item menu-item__social-icons">
+                        <a href="https://www.linkedin.com/in/oleksandr-opanasenkov-853a56221/" target="_blank">
+                            <!-- <i class="fi fi-brands-linkedin"></i> -->
+                            <img src="img/favicon/linkedin-favicon24.png" alt="Linkedin">
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item__social-icons">
+                        <a href="https://www.instagram.com/alex_frontend/" target="_blank">
+                            <!-- <i class="fi fi-brands-instagram" aria-hidden="true"></i> -->
+                            <img src="img/favicon/instagram-favicon24.png" alt="Instagram">
+                        </a>
+                    </li>
+                    <li class="menu-item__social-icons">
+                        <a href="https://t.me/alexfrontend" target="_blank">
+                            <!-- <i class="fi fi-brands-telegram" aria-hidden="true"></i> -->
+                            <img src="img/favicon/telegram-favicon24.png" alt="Telegram">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </header> 
+    </header>
+    <main class="main">
+        <section id="about" class="aboutMe">
+            <div class="container about">
+                <h1 class="about__title">About me</h1>
+                <div class="about__content">
+                    <div class="about__left">
+                        <div class="about__img">
+                            <img class="aboutMe-img" src="img/alex_opanasenkov.jpg" alt="foto">
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <h2 class="about__greeting _anim-items _anim-no-hide _active">My name is Oleksandr Opanasenkov</h2>
+                        <div class="about__desc _anim-items _anim-no-hide _active">
+                            <p>I am very passionate about solving various tasks, always striving to find the best solutions.</p>
+                            <p>Thanks to my deep technical knowledge and diverse professional experience, I can effectively solve complex problems taking into account physical and financial factors.</p>
+                            <p>Attention to detail, openness to new things, responsibility and commitment to completing tasks help me quickly master new areas of specialization.</p>
+                            <p>Since 2024, I have been a freelancer, <b>providing website creation services</b> providing website creation services for small and medium businesses.</p>
+                            <p>My clients are from different countries. I started my freelance career on <a target="blank" href="https://freelancehunt.com/freelancer/rusltur_24.html#reviews" title="ссылка на биржу freelancehunt.com" rel="nofollow">Ukrainian </a> and <a target="blank" href="https://freelance.ru/reviews/programme_r/" title="ссылка на биржу freelance.ru" rel="nofollow"> Russian </a> freelance exchanges.
+                            </p>
+                            <p>I have knowledge of HTML, CSS, Git, GitHub, JavaScript. I work on educational projects that help me apply the acquired knowledge in practice, for example, API implementation.
+                            </p>
+                            <p>I never stop improving my JavaScript skills, and I love reading books about efficiency and spiritual development.</p>
+                            <p>I like cycling, running and coffee 😊.</p>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="myWorks" class="works">
+            <div class="container">
+                <h2 class="works-title">
+                    Works 
+                </h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

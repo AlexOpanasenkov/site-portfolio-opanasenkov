@@ -7,17 +7,28 @@ ul {
   padding: 0;
   list-style: none;
 }
+body {
+  font: 400 16px/18px 'Roboto', arial, sans-serif;
+  color: #0a0a0a;
+}
+h1 {
+  font: bold 21px / 24px 'Roboto', arial, sans-serif;
+}
+h2 {
+  font: bold 16px/18px 'Roboto', arial, sans-serif;
+}
 /* ------------------------------------START HEADER---------------------------------------- */
 .header {
   padding: 33px 0 32px;
   background-color: #f9faf3;
   color: #150303;
+  font: bold 24px/26px 'Allura-Regular', arial, sans-serif, cursive !important;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
 }
 .nav {
   display: flex;
@@ -42,6 +53,7 @@ ul {
   left: 5px;
   top: 43%;
   background: #0056ec;
+  background: radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
   border-radius: 50%;
   opacity: 0.7;
 }
@@ -49,6 +61,7 @@ ul {
   left: 13px;
   top: 48%;
   background: #c8dbfb;
+  background: radial-gradient(237.5% 111.8% at 0% 0%, rgb(222, 220, 219) 0%, rgb(135, 130, 133) 100%);
   border-radius: 50%;
   opacity: 0.7;
 }
@@ -58,8 +71,57 @@ ul {
 .menu-item {
   margin-right: 30px;
 }
-.menu-link {
-  font: 400 16px/18px 'Allura-Regular', arial, sans-serif, cursive !important;
+.fi {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+/* ---------------------------------END HEADER-------------------------------- */
+/* ---------------------------------START MAIN-------------------------------- */
+.about__content {
+  display: flex;
+}
+.about__title {
+  text-align: center;
+  margin-bottom: 0.5625rem;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.aboutMe-img {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 14.65625rem;
+  height: 15.375rem;
+}
+.about__right {
+  border-left: 1px solid rgba(34, 33, 45, 0.1);
+  padding: 0.34375rem 2.34375rem 2.34375rem;
+  /* width: 60%; */
+}   
+._anim-items._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+._anim-items {
+  opacity: 0;
+  transform: translate(0, 20%);
+  transition: all 0.8s ease 0s;
+}
+.about__greeting {
+  margin-bottom: 0.9375rem;
+}
+h3 {
+  font-size: 0.9375rem;
+}
+._anim-items._active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+/* ---------------------------------END MAIN-------------------------------- */
 
 
