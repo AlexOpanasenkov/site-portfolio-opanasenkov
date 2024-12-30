@@ -21,6 +21,7 @@ h2 {
 .header {
   padding: 33px 0 32px;
   background-color: #f9faf3;
+  background-color:rgb(194 159 133);
   color: #150303;
   font: bold 24px/26px 'Allura-Regular', arial, sans-serif, cursive !important;
 }
@@ -133,6 +134,7 @@ h3 {
 }
 .works-img {
   width: 300px;
+  border-radius: 12px;
 }
 
 
