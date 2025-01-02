@@ -131,6 +131,7 @@ h3 {
   flex-wrap: wrap;
   gap: 10px; /* Добавляет промежутки между элементами (опционально) */
   justify-content: space-between;
+  text-align: center;
 }
 .works-img {
   width: 300px;
