@@ -138,4 +138,15 @@ h3 {
   border-radius: 12px;
 }
 
+/* ---------------------------------END WORKS----------------------------- */
+/* ---------------------------------START FOOTER-------------------------- */
+.footer {
+  background-color: rgb(194 159 133);;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
 
