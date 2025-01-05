@@ -101,7 +101,7 @@ img {
 }
 .about__right {
   border-left: 1px solid rgba(34, 33, 45, 0.1);
-  padding: 0.34375rem 2.34375rem 2.34375rem;
+  padding: 0.34375rem 2.34375rem 1.34375rem;
   /* width: 60%; */
 }   
 ._anim-items._active {
@@ -125,7 +125,12 @@ h3 {
 }
 /* ---------------------------------END MAIN-------------------------------- */
 /* ---------------------------------START WORKS----------------------------- */
-
+.works-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.25rem !important;
+  margin-bottom: 50px;
+}
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -137,11 +142,23 @@ h3 {
   width: 300px;
   border-radius: 12px;
 }
-
+.works-link {
+  display: inline-block;
+  border: 1px solid rgb(194 159 133);
+  padding: 10px;
+  /* background-color: rgb(194 159 133); */
+  border-radius: 12px;
+  transition: background-color 0.3s ease; /* Плавный переход (опционально) */
+  margin-bottom: 30px;
+}
+.works-link:hover {
+  background-color: rgb(194, 159, 133); /* Фон появляется при наведении */
+  color: white; /* Изменение цвета текста (опционально) */
+}
 /* ---------------------------------END WORKS----------------------------- */
 /* ---------------------------------START FOOTER-------------------------- */
 .footer {
-  background-color: rgb(194 159 133);;
+  background-color: rgb(194 159 133);
 }
 .footer-inner {
   display: flex;
