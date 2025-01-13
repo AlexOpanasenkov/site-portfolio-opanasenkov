@@ -193,10 +193,22 @@ h3 {
   }
   .aboutMe-img {
     /* display: block; */
-    max-width: 100%;
-    align-items: center;
+    /* max-width: 100%; */
+    /* align-items: center; */
     width: 10.65625rem;
     height: 11.375rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .about__description {
+    font: 400 14px / 18px 'Roboto', arial, sans-serif;
+    color: #0a0a0a;
+  }
+  .about__right {
+    border-left: 1px solid rgba(34, 33, 45, 0.1);
+    padding: 0;
+    /* width: 60%; */
   }
 }
 
