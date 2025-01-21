@@ -182,6 +182,9 @@ h3 {
 }
 
 @media (max-width: 426px) {
+  .logo {
+    display: none;
+  }
   .about__content {
     flex-direction: column;
     align-items: center;
