@@ -198,13 +198,14 @@ h3 {
 @media (max-width: 801px) {
   .menu-btn {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     background-color: transparent;
     order: 1;
     border: none;
     cursor: pointer;
     position: relative;
+    z-index: 50;
   }
   .btn-line {
     position: absolute;
@@ -212,22 +213,55 @@ h3 {
     width: 100%;
     background-color: #fff;
     height: 2px;
+    transition: .3s ease;
   }
   .btn-line:nth-child(1) {
     top: 0;
   }
   .btn-line:nth-child(2) {
-    top: 15px;
+    top: 12px;
   }
   .btn-line:nth-child(3) {
-    top: 15px;
+    top: 12px;
   }
   .btn-line:nth-child(4) {
-    top: 30px;
+    top: 25px;
+  }
+  .menu-open .btn-line:nth-child(1) {
+    transform: scaleX(0); /* первая риска уменьшаеться до нуля */
+  }
+  .menu-open .btn-line:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .menu-open .btn-line:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .menu-open .btn-line:nth-child(4) {
+    transform: scaleX(0); /* 4 риска уменьшаеться до нуля */
   }
   .menu {
-    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(194, 159, 133);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: .3s ea;
   }
+  .menu-open .menu {
+    transform: translateY(0);
+  }
+  .menu-item {
+    margin-right: 0;
+    padding: 20px 0;
+    font: bold 27px / 31px 'Allura-Regular', arial, sans-serif, cursive !important;
+}
   .logo {
     padding: 13px 0 13px 0;
     /* margin-right: 44px; */
