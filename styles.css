@@ -1,3 +1,9 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -69,6 +75,7 @@ h2 {
 }
 .menu {
   display: flex;
+  
 }
 .menu-item {
   margin-right: 30px;
@@ -258,7 +265,8 @@ h3 {
     align-items: center;
     flex-direction: column;
     transform: translateY(-100%);
-    transition: .3s ea;
+    transition: .3s ease;
+    will-change: transform;
   }
   .menu-open .menu {
     transform: translateY(0);
