@@ -172,6 +172,12 @@ h3 {
   justify-content: space-between;
   padding: 20px 0;
 }
+.footer-menu {
+  display: flex;
+}
+.menu-item__social-icons {
+  margin-right: 20px;
+}
 /* ---------------------------------END FOOTER-------------------------- */
 @media (max-width: 1037px) {
   .works-list {
@@ -272,6 +278,9 @@ h3 {
   .logo__text-block {
     margin: 0 auto;
   }
+  .footer-menu {
+    display: flex;
+  }
 }
 @media (max-width: 769px) {
   .about__description {
@@ -279,14 +288,27 @@ h3 {
     color: #0a0a0a;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 548px) {
+  .aboutMe-img {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 10.65625rem;
+    height: 11.375rem;
+  }
+}
+@media (max-width: 433px) {
   .logo {
     display: none;
   }
-  .about__content {
+  /* .about__content {
     flex-direction: column;
     align-items: center;
-  }
+  } */
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
   .about__greeting {
     text-align: center;
   }
